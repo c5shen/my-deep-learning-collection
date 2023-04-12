@@ -12,7 +12,7 @@ python seq2seq_attention.py -h
 To train on existing data (provided in `data/translation_data.bin`),
 with beam search of width 4:
 ```
-python seq2seq_attention.py train --beam_width 4 --save_model_prefix [name] 
+python seq2seq_attention.py train --beam_width 4 --save_model_prefix [path/to/model.pth]
 ```
 
 #### Example 2
