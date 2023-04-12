@@ -15,6 +15,13 @@ with beam search of width 4:
 python seq2seq_attention.py train --beam_width 4 --save_model_prefix [name] 
 ```
 
+#### Example 2
+To get the average likelihood of a beam search of width 8:
+```
+python seq2seq_attention.py beam_avg_likelihood --load_model [path/to/model.pth] --beam_width 8
+```
+
+#### Unit Testing
 To run tests on the current implementation:
 ```
 python tests.py -m unittest tests
