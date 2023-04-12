@@ -6,7 +6,7 @@ second order Poisson equations with Dirichlet boundary conditions.
 
 ## MLP solution
 ### Solving 2D-Laplace
-For 2D-Laplace default (1 layer 100 nodes, batch size 32), run 
+For 2D-Laplace default (1 layer, 100 nodes, batch size 32), run 
 ```
     python 2DLaplace.py 
 ```
@@ -19,12 +19,12 @@ also you can specify
 * `-m`: momentum
 #### Example
 ```
-    python 2DLaplace.py -l 2 -n 64 -b 32 -e 200 -m 0.01 -d 9
+python 2DLaplace.py -l 2 -n 64 -b 32 -e 200 -m 0.01 -d 9
 ```
   
 ### 3D Laplace
 ```
-    python 3DLaplace.py -dim 3
+python 3DLaplace.py -dim 3
 ```
 Other parameters can be changed in the same way as in `2DLaplace.py`.
     
@@ -40,18 +40,18 @@ solve for Laplace equations. For more details, please refer to the
 [report pdf](Deep_Learning_Applications_on_Solving_PDEs.pdf).
 
 To run the code with default settings:
-* discretized into 20 pieces,
+* discretized into 20 pieces
 * learning rate = 0.0001
-* momentum = 0.5:
+* momentum = 0.5
 ```
-    python3 gacnn.py
+python3 gacnn.py
 ```
 The command will result in several graph generations (result and error at
 certain epochs), as well as a running loss vs. epoch graph at the very end.
 
 The same can be done to naive GACNN:
 ```
-    python3 gacnn_naive.py
+python3 gacnn_naive.py
 ```
 
 Prerequisites:
