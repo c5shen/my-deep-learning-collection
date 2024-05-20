@@ -802,7 +802,7 @@ for repeat in range(ROUND):
     plt.title("Train/Validation Loss Per Epoch (batch size = {})".format(BATCH))
     plt.plot(x_axis, train_loss, 'b-', label='Train Loss')
     plt.plot(x_axis, val_loss, 'r-', label='Validation Loss')
-    plt.plot([],[], '', label='Learning Rate is {.5f}'.format(RATE))
+    plt.plot([],[], '', label='Learning Rate is {0:.5f}'.format(RATE))
     plt.plot([],[], '', label='Momentum is {0:.5f}'.format(MOMENTUM))
     plt.axvline(x=best_epoch, linewidth=0.3, linestyle='--')
     plt.text(best_epoch + 1, best_val_loss, "Best val: {0:.2f}".format(best_val_loss))

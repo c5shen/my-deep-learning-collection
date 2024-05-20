@@ -12,7 +12,7 @@ To run the codes:
         Defaults are the same. Run instruction is the same.
 
 `plot.py` codes for plotting filters.
-          To run, run python and give weights .txt file as a parameter.
+        Plotting is currently integrated in each run file.
 
 `mlp.py` codes for MLP model.
          To run, run python. ”-h” for more info.
